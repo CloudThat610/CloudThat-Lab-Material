@@ -1,0 +1,8 @@
+# Map 1-based optional input ports to variables
+dataset <- maml.mapInputPort(1) # class: data.frame
+
+classes <- c("Sitting","Sitting Down", "Standing", "Standing Up","Walking")
+data.set <- cbind(classes, dataset) 
+
+# Select data.frame to be sent to the output Dataset port
+maml.mapOutputPort("data.set");

@@ -1,0 +1,11 @@
+# Map 1-based optional input ports to variables
+har <- maml.mapInputPort(1) # class: data.frame
+#dataset2 <- maml.mapInputPort(2) # class: data.frame
+install.packages("src/corrplot_0.73.zip",lib=".",repos=NULL,verbose=TRUE)
+library(corrplot, lib.loc=".",verbose=TRUE)
+
+corHar <- cor(har[, -c(1,2,19)])
+corrplot(corHar, method = "color", mar = c(2,2,2,2))
+
+# Select data.frame to be sent to the output Dataset port
+maml.mapOutputPort("har");
