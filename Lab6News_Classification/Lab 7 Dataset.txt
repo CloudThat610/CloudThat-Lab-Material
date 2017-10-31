@@ -1,0 +1,7 @@
+Lab 7: News classification into sports, business, politics using multiclass classification
+
+· Blob URL for Import Data 1-https://azuremlsampleexperiments.blob.core.windows.net/datasets/lyrl2004_tokens_train.csv
+
+· Blob URL for Import Data 2 - https://azuremlsampleexperiments.blob.core.windows.net/datasets/rcv1-v2.topics.qrels.csv
+
+· Blob URL for Import Data 3 - https://azuremlsampleexperiments.blob.core.windows.net/datasets/lyrl2004_tokens_test.csv
