@@ -42,7 +42,7 @@ $(function(){
 			"Text" : JSON.stringify(data['documents'][0]['text'])
         };
       
-        $.ajax({url: "https://api.cognitive.microsoft.com/bing/v5.0/spellcheck?" + $.param(params),
+        $.ajax({url: "https://api.cognitive.microsoft.com/bing/v7.0/spellcheck?" + $.param(params),
             beforeSend: function(xhrObj){
                 //ha Request headers
                 xhrObj.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
